@@ -10,3 +10,15 @@ C:\Users\phamt\source\repos\PTUDW\MyClass\obj\Debug\MyClass.csproj.CoreCompileIn
 C:\Users\phamt\source\repos\PTUDW\MyClass\obj\Debug\MyClass.csproj.CopyComplete
 C:\Users\phamt\source\repos\PTUDW\MyClass\obj\Debug\MyClass.dll
 C:\Users\phamt\source\repos\PTUDW\MyClass\obj\Debug\MyClass.pdb
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\bin\Debug\MyClass.dll.config
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\bin\Debug\MyClass.dll
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\bin\Debug\MyClass.pdb
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\bin\Debug\EntityFramework.dll
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\bin\Debug\EntityFramework.SqlServer.dll
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\bin\Debug\EntityFramework.xml
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\bin\Debug\EntityFramework.SqlServer.xml
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.csproj.AssemblyReference.cache
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.csproj.CoreCompileInputs.cache
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.csproj.CopyComplete
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.dll
+D:\ProjectPTUDW\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.pdb
