@@ -17,7 +17,10 @@ namespace MyClass.DAO
         {
             return db.Caregories.ToList();
         }
-
+        public List<Categories> getListByPareantId(int parentid = 0)
+        {
+            return db.Caregories.Where(m => m.ParentID == parentid && m.Status == 1).OrderBy(m => m.Order).ToList();
+        }
         //Select * from cho Index chi voi status 1,2
         public List<Categories> getList(string status = "ALL")//status = 0,1,2
         {
@@ -54,6 +57,13 @@ namespace MyClass.DAO
             {
                 return db.Caregories.Find(id);
             }
+        }
+
+        //Hien thi danh sach 1 mau tin (ban ghi) voi kieu string = slug
+        public Categories getRow(string slug)
+        {
+
+            return db.Caregories.Where(m => m.Slug == slug && m.Status == 1).FirstOrDefault();
         }
 
         //Tao moi mau tin
