@@ -161,7 +161,7 @@ namespace PTUDW.Areas.Admin.Controllers
 
                 //xu ly cho phan upload hinh anh
                 var img = Request.Files["img"];//lay thong tin file
-                string PathDir = "~/Public/img/supplier";
+                string PathDir = "~/Public/img/supplier";            
                 if (img.ContentLength != 0)
                 {
                     //Xu ly cho muc xoa hinh anh
@@ -183,8 +183,7 @@ namespace PTUDW.Areas.Admin.Controllers
                         string PathFile = Path.Combine(Server.MapPath(PathDir), imgName);
                         img.SaveAs(PathFile);
                     }
-
-                }//ket thuc phan upload hinh anh
+                }//ket thuc phan upload hinh anh 
 
                 //Cap nhat du lieu, sua them cho phan Links phuc vu cho Topics
                 //Neu trung khop thong tin: Type = category va TableID = categories.ID

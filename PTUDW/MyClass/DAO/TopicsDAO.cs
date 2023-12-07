@@ -50,6 +50,12 @@ namespace MyClass.DAO
             }
         }
         /////////////////////////////////////////////////////////////////////////////////////
+        //Hien thi danh sach 1 mau tin (ban ghi voi kieu du lieu la string slug cho URL)
+        public Topics getRow(string slug)
+        {
+            return db.Topics.Where(m => m.Slug == slug).FirstOrDefault();
+        }
+        /////////////////////////////////////////////////////////////////////////////////////
         ///Them moi mot mau tin
         public int Insert(Topics row)
         {

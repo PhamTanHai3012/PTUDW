@@ -102,7 +102,7 @@ namespace PTUDW.Controllers
 
         /////////////////////////////////////////////////////////////////////////////
         //Site/Product
-        public ActionResult Product()
+        public ActionResult Product()//Tất cả sản phẩm
         {
             ProductsDAO productsDAO = new ProductsDAO();
             List<ProductInfo> list = productsDAO.getListBylimit(10);
@@ -126,7 +126,7 @@ namespace PTUDW.Controllers
 
         /////////////////////////////////////////////////////////////////////////////
         //Site/ProductCategory
-        public ActionResult ProductCategory(string slug)
+        public ActionResult ProductCategory(string slug)//Sản phẩm theo categorylist
         {
             //Lay categories dua vao Slug
             CategoriesDAO categoriesDAO = new CategoriesDAO();
@@ -168,7 +168,9 @@ namespace PTUDW.Controllers
         //Site/PostTopic
         public ActionResult PostTopic(string slug)
         {
-            return View("PostTopic");
+            TopicsDAO topicsDAO = new TopicsDAO();
+            Topics topics = topicsDAO.getRow(slug);
+            return View("PostTopic",topics);
         }
 
         /////////////////////////////////////////////////////////////////////////////
@@ -219,7 +221,7 @@ namespace PTUDW.Controllers
 
         /////////////////////////////////////////////////////////////////////////////
         //HomeProduct
-        public ActionResult HomeProduct(int id)
+        public ActionResult HomeProduct(int id)//Danh mục sản phẩm theo loại
         {
             CategoriesDAO categoriesDAO = new CategoriesDAO();
             Categories categories = categoriesDAO.getRow(id);
